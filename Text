@@ -1,0 +1,9 @@
+
+
+export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"WSSTFBE02H9I0TNIT8PN\", \"bucket\": \"movie-fun-course\", \"secret_access_key\": \"9cvcW70N5+DaJ7+iVL61iqwATYP4w0h5XdLRhj8b\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+
+export s3_endpointUrl=http://127.0.0.1:9000
+
+cf push moviefun -p build/libs/moviefun-1.1.0-SNAPSHOT.war --random-route --no-start
+cf push struts -p target/struts.war --random-route --no-start
+
