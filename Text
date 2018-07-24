@@ -7,3 +7,7 @@ export s3_endpointUrl=http://127.0.0.1:9000
 cf push moviefun -p build/libs/moviefun-1.1.0-SNAPSHOT.war --random-route --no-start
 cf push struts -p target/struts.war --random-route --no-start
 
+
+apps-movie-fun-modernization-code forked from platform-acceleration-lab/apps-movie-fun-modernization-code
+
+
